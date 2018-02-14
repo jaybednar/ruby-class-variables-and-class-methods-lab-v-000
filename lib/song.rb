@@ -34,7 +34,7 @@ class Song
     if genre_hash[genre]
       genre_hash[genre] += 1
     else
-      genre_hash[genre] = 1
+      genre_hash[genre] = 0
       genre_hash[genre] += 1
     end
   end
@@ -47,7 +47,7 @@ def self.artist_count
     if artist_hash[artist]
       num_of_this_artist += 1
     else
-      artist_hash[artist]
+      artist_hash[artist] = 0 
       artist_hash[artist] += 1
     end
   end
